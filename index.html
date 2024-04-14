@@ -1,53 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Password Validation Form</title>
-<style>
-  .error {
-    color: red;
-  }
-</style>
-</head>
-<body>
+<html>
+    <head>
+        <style>
+            body {
+                   background-color: black;
+            }
+               b {
+                   color: pink
+               }
+                
+            
+            
+            </style>
+        </head>
+        <body style="text-align: center">
+            <img 
+                  src="https://s.yimg.com/fz/api/res/1.2/aSqRnKHvJTwQ1oz_V6_GlA--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI2MDtxPTgwO3c9MjU2/https://s.yimg.com/zb/imgv1/65c3f2bf-e346-303d-bdc5-4be0f3667c42/t_500x300"
+                  width="60px"
+             />
+             <img 
+                  src="https://s.yimg.com/fz/api/res/1.2/LfxJEkqr9AQXQYmOJ4IKfg--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI2MDtxPTgwO3c9MzMy/https://s.yimg.com/zb/imgv1/bca0eca6-2bd1-3f98-b0f4-429e0085b59d/t_500x300"
+                  width="100px"
+                  height="60px"
+             />
+            <h2><p style="color: blue">Legendary and Wb presents..</p></h2>
+                         <b>Godzilla</b><b style="color: blue">x Kong the new empire</b>
+                         <hr>
+             
+                                   
+            <br>
+        
+            
 
-<h2>Password Validation Form</h2>
+        
+            <iframe width="800" height="500" src="https://www.youtube.com/embed/lV1OOlGwExM" title="Godzilla x Kong : The New Empire | Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+            <hr>
+            <p style="color: white"> godzillax kong is about:The movie's synopsis confirms it "follows up the explosive showdown of Godzilla vs. Kong with an all-new cinematic adventure, pitting the almighty Kong and the fearsome Godzilla against a colossal undiscovered threat hidden within our world, challenging their very existence -- and our own."
 
-<form id="passwordForm">
-  <label for="password">Password:</label>
-  <input type="password" id="password" name="password">
-  <span id="passwordError" class="error"></span>
-  <br><br>
-  <input type="submit" value="Submit">
-</form>
+            </body>
+            </html>
 
-<script>
-document.getElementById("passwordForm").addEventListener("submit", function(event) {
-  var password = document.getElementById("password").value;
-  var passwordError = document.getElementById("passwordError");
-  
-  // Reset previous error message
-  passwordError.textContent = "";
-  
-  if (password.length < 8) {
-    passwordError.textContent = "Password must be at least 8 characters long";
-    event.preventDefault();
-  } else if (!/[a-z]/.test(password)) {
-    passwordError.textContent = "Password must contain at least one lowercase letter";
-    event.preventDefault();
-  } else if (!/[A-Z]/.test(password)) {
-    passwordError.textContent = "Password must contain at least one uppercase letter";
-    event.preventDefault();
-  } else if (!/\d/.test(password)) {
-    passwordError.textContent = "Password must contain at least one number";
-    event.preventDefault();
-  } else if (!/[\W_]/.test(password)) {
-    passwordError.textContent = "Password must contain at least one special character";
-    event.preventDefault();
-  }
-});
-</script>
-
-</body>
-</html>
